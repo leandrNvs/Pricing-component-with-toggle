@@ -12,7 +12,7 @@ export default function Card({ title, price, storage, user, sendUp }) {
   return (
     <StyledCard primary={title === "professional"}>
       <Title>{title}</Title>
-      <Price>
+      <Price primary={title === "professional"}>
         <Icon>$</Icon>
         {price}
       </Price>

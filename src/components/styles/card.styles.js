@@ -65,7 +65,8 @@ export const Price = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
-  color: ${(props) => props.theme.colors.darkGrayishBlue};
+  color: ${(props) =>
+    props.primary ? "#fff" : props.theme.colors.darkGrayishBlue};
 `;
 
 export const List = styled.ul`
